@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neutral-100: #0e0e10;
+  --color-neutral-95: #1a1a1c;
+  --color-neutral-90: #272728;
+  --color-neutral-85: #323234;
+  --color-neutral-80: #3e3e40;
+  --color-neutral-70: #575758;
+  --color-neutral-60: #6e6e70;
+  --color-neutral-50: #868687;
+  --color-neutral-40: #9f9f9f;
+  --color-neutral-30: #b7b7b8;
+  --color-neutral-20: #cfcfcf;
+  --color-neutral-15: #dbdbdb;
+  --color-neutral-10: #e7e7e8;
+  --color-neutral-05: #f3f3f3;
+  --color-neutral-00: #ffffff;
+  
+  --color-primary-190: #0a0816;
+  --color-primary-180: #1b163f;
+  --color-primary-160: #2d2467;
+  --color-primary-140: #3e338f;
+  --color-primary-120: #5041b8;
+  --color-primary-100: #614fe0;
+  --color-primary-80: #7d6fe6;
+  --color-primary-60: #9a8eeb;
+  --color-primary-40: #b6aef1;
+  --color-primary-20: #d3cef6;
+  --color-primary-10: #efedfc;
+
+  --color-secondary-100: #ff7c5a;
+  
+  --font-heywow: "HeyWow", sans-serif;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    background: none;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    @apply bg-neutral-00;
+  }
+}
+
+.login-version-9 {
+  background: var(--color-neutral-00, #ffffff);
+  border-radius: 9px;
+  padding: 68px 0px 34px 0px;
+  display: grid;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 375/812;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: visible;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
